@@ -1,0 +1,249 @@
+[[package]]
+category = "main"
+description = "Python package for providing Mozilla's CA Bundle."
+name = "certifi"
+optional = false
+python-versions = "*"
+version = "2019.11.28"
+
+[[package]]
+category = "main"
+description = "Universal encoding detector for Python 2 and 3"
+name = "chardet"
+optional = false
+python-versions = "*"
+version = "3.0.4"
+
+[[package]]
+category = "dev"
+description = "Discover and load entry points from installed packages."
+name = "entrypoints"
+optional = false
+python-versions = ">=2.7"
+version = "0.3"
+
+[[package]]
+category = "dev"
+description = "the modular source code checker: pep8, pyflakes and co"
+name = "flake8"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "3.7.9"
+
+[package.dependencies]
+entrypoints = ">=0.3.0,<0.4.0"
+mccabe = ">=0.6.0,<0.7.0"
+pycodestyle = ">=2.5.0,<2.6.0"
+pyflakes = ">=2.1.0,<2.2.0"
+
+[[package]]
+category = "main"
+description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
+name = "h11"
+optional = false
+python-versions = "*"
+version = "0.8.1"
+
+[[package]]
+category = "main"
+description = "HTTP/2 State-Machine based protocol implementation"
+name = "h2"
+optional = false
+python-versions = "*"
+version = "3.1.1"
+
+[package.dependencies]
+hpack = ">=2.3,<4"
+hyperframe = ">=5.2.0,<6"
+
+[[package]]
+category = "main"
+description = "Pure-Python HPACK header compression"
+name = "hpack"
+optional = false
+python-versions = "*"
+version = "3.0.0"
+
+[[package]]
+category = "main"
+description = "Chromium HSTS Preload list as a Python package and updated daily"
+name = "hstspreload"
+optional = false
+python-versions = ">=3.6"
+version = "2019.12.9"
+
+[[package]]
+category = "main"
+description = "The next generation HTTP client."
+name = "httpx"
+optional = false
+python-versions = ">=3.6"
+version = "0.9.3"
+
+[package.dependencies]
+certifi = "*"
+chardet = ">=3.0.0,<4.0.0"
+h11 = ">=0.8.0,<0.9.0"
+h2 = ">=3.0.0,<4.0.0"
+hstspreload = "*"
+idna = ">=2.0.0,<3.0.0"
+rfc3986 = ">=1.3,<2"
+sniffio = ">=1.0.0,<2.0.0"
+
+[[package]]
+category = "main"
+description = "HTTP/2 framing layer for Python"
+name = "hyperframe"
+optional = false
+python-versions = "*"
+version = "5.2.0"
+
+[[package]]
+category = "main"
+description = "Internationalized Domain Names in Applications (IDNA)"
+name = "idna"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.8"
+
+[[package]]
+category = "dev"
+description = "A Python utility / library to sort Python imports."
+name = "isort"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "4.3.21"
+
+[package.extras]
+pipfile = ["pipreqs", "requirementslib"]
+pyproject = ["toml"]
+requirements = ["pipreqs", "pip-api"]
+xdg_home = ["appdirs (>=1.4.0)"]
+
+[[package]]
+category = "dev"
+description = "McCabe checker, plugin for flake8"
+name = "mccabe"
+optional = false
+python-versions = "*"
+version = "0.6.1"
+
+[[package]]
+category = "dev"
+description = "Python style guide checker"
+name = "pycodestyle"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.5.0"
+
+[[package]]
+category = "dev"
+description = "passive checker of Python programs"
+name = "pyflakes"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.1.1"
+
+[[package]]
+category = "main"
+description = "Validating URI References per RFC 3986"
+name = "rfc3986"
+optional = false
+python-versions = "*"
+version = "1.3.2"
+
+[package.extras]
+idna2008 = ["idna"]
+
+[[package]]
+category = "main"
+description = "Sniff out which async library your code is running under"
+name = "sniffio"
+optional = false
+python-versions = ">=3.5"
+version = "1.1.0"
+
+[[package]]
+category = "dev"
+description = "A formatter for Python code."
+name = "yapf"
+optional = false
+python-versions = "*"
+version = "0.29.0"
+
+[metadata]
+content-hash = "86ffc422adddf7a7f45dc3e454c335f5ec4b83e9fadb3b7a7aa78a903ec23dfe"
+python-versions = "^3.7"
+
+[metadata.files]
+certifi = [
+    {file = "certifi-2019.11.28-py2.py3-none-any.whl", hash = "sha256:017c25db2a153ce562900032d5bc68e9f191e44e9a0f762f373977de9df1fbb3"},
+    {file = "certifi-2019.11.28.tar.gz", hash = "sha256:25b64c7da4cd7479594d035c08c2d809eb4aab3a26e5a990ea98cc450c320f1f"},
+]
+chardet = [
+    {file = "chardet-3.0.4-py2.py3-none-any.whl", hash = "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"},
+    {file = "chardet-3.0.4.tar.gz", hash = "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"},
+]
+entrypoints = [
+    {file = "entrypoints-0.3-py2.py3-none-any.whl", hash = "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19"},
+    {file = "entrypoints-0.3.tar.gz", hash = "sha256:c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451"},
+]
+flake8 = [
+    {file = "flake8-3.7.9-py2.py3-none-any.whl", hash = "sha256:49356e766643ad15072a789a20915d3c91dc89fd313ccd71802303fd67e4deca"},
+    {file = "flake8-3.7.9.tar.gz", hash = "sha256:45681a117ecc81e870cbf1262835ae4af5e7a8b08e40b944a8a6e6b895914cfb"},
+]
+h11 = [
+    {file = "h11-0.8.1-py2.py3-none-any.whl", hash = "sha256:f2b1ca39bfed357d1f19ac732913d5f9faa54a5062eca7d2ec3a916cfb7ae4c7"},
+    {file = "h11-0.8.1.tar.gz", hash = "sha256:acca6a44cb52a32ab442b1779adf0875c443c689e9e028f8d831a3769f9c5208"},
+]
+h2 = [
+    {file = "h2-3.1.1-py2.py3-none-any.whl", hash = "sha256:ac377fcf586314ef3177bfd90c12c7826ab0840edeb03f0f24f511858326049e"},
+    {file = "h2-3.1.1.tar.gz", hash = "sha256:b8a32bd282594424c0ac55845377eea13fa54fe4a8db012f3a198ed923dc3ab4"},
+]
+hpack = [
+    {file = "hpack-3.0.0-py2.py3-none-any.whl", hash = "sha256:0edd79eda27a53ba5be2dfabf3b15780928a0dff6eb0c60a3d6767720e970c89"},
+    {file = "hpack-3.0.0.tar.gz", hash = "sha256:8eec9c1f4bfae3408a3f30500261f7e6a65912dc138526ea054f9ad98892e9d2"},
+]
+hstspreload = [
+    {file = "hstspreload-2019.12.9.tar.gz", hash = "sha256:ce77c785c51ea51884ef43fffe090d9122af239e0922319cc868051540f99fcb"},
+]
+httpx = [
+    {file = "httpx-0.9.3-py2.py3-none-any.whl", hash = "sha256:b06753331906495b76f3feee654d1f430e61eb1c72d2fff9604c37af83878fc9"},
+    {file = "httpx-0.9.3.tar.gz", hash = "sha256:1291c5ad8c872668549abb99bf8d25d25bbcac4bac13863dee54252d66e90e6f"},
+]
+hyperframe = [
+    {file = "hyperframe-5.2.0-py2.py3-none-any.whl", hash = "sha256:5187962cb16dcc078f23cb5a4b110098d546c3f41ff2d4038a9896893bbd0b40"},
+    {file = "hyperframe-5.2.0.tar.gz", hash = "sha256:a9f5c17f2cc3c719b917c4f33ed1c61bd1f8dfac4b1bd23b7c80b3400971b41f"},
+]
+idna = [
+    {file = "idna-2.8-py2.py3-none-any.whl", hash = "sha256:ea8b7f6188e6fa117537c3df7da9fc686d485087abf6ac197f9c46432f7e4a3c"},
+    {file = "idna-2.8.tar.gz", hash = "sha256:c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"},
+]
+isort = [
+    {file = "isort-4.3.21-py2.py3-none-any.whl", hash = "sha256:6e811fcb295968434526407adb8796944f1988c5b65e8139058f2014cbe100fd"},
+    {file = "isort-4.3.21.tar.gz", hash = "sha256:54da7e92468955c4fceacd0c86bd0ec997b0e1ee80d97f67c35a78b719dccab1"},
+]
+mccabe = [
+    {file = "mccabe-0.6.1-py2.py3-none-any.whl", hash = "sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42"},
+    {file = "mccabe-0.6.1.tar.gz", hash = "sha256:dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"},
+]
+pycodestyle = [
+    {file = "pycodestyle-2.5.0-py2.py3-none-any.whl", hash = "sha256:95a2219d12372f05704562a14ec30bc76b05a5b297b21a5dfe3f6fac3491ae56"},
+    {file = "pycodestyle-2.5.0.tar.gz", hash = "sha256:e40a936c9a450ad81df37f549d676d127b1b66000a6c500caa2b085bc0ca976c"},
+]
+pyflakes = [
+    {file = "pyflakes-2.1.1-py2.py3-none-any.whl", hash = "sha256:17dbeb2e3f4d772725c777fabc446d5634d1038f234e77343108ce445ea69ce0"},
+    {file = "pyflakes-2.1.1.tar.gz", hash = "sha256:d976835886f8c5b31d47970ed689944a0262b5f3afa00a5a7b4dc81e5449f8a2"},
+]
+rfc3986 = [
+    {file = "rfc3986-1.3.2-py2.py3-none-any.whl", hash = "sha256:df4eba676077cefb86450c8f60121b9ae04b94f65f85b69f3f731af0516b7b18"},
+    {file = "rfc3986-1.3.2.tar.gz", hash = "sha256:0344d0bd428126ce554e7ca2b61787b6a28d2bbd19fc70ed2dd85efe31176405"},
+]
+sniffio = [
+    {file = "sniffio-1.1.0-py3-none-any.whl", hash = "sha256:20ed6d5b46f8ae136d00b9dcb807615d83ed82ceea6b2058cecb696765246da5"},
+    {file = "sniffio-1.1.0.tar.gz", hash = "sha256:8e3810100f69fe0edd463d02ad407112542a11ffdc29f67db2bf3771afb87a21"},
+]
+yapf = [
+    {file = "yapf-0.29.0-py2.py3-none-any.whl", hash = "sha256:cad8a272c6001b3401de3278238fdc54997b6c2e56baa751788915f879a52fca"},
+    {file = "yapf-0.29.0.tar.gz", hash = "sha256:712e23c468506bf12cadd10169f852572ecc61b266258422d45aaf4ad7ef43de"},
+]
