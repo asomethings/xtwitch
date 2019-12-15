@@ -80,8 +80,19 @@ class Authorization:
 
     @classmethod
     def remove(cls, profile_name: str) -> None:
+        """Removes Authorization Profile
+
+        Args:
+            profile_name: Profile name to remove
+
+        Returns:
+            None
+
+        Raises:
+            ClientProfileNotFound
+        """
         if profile_name not in cls._AVAILABLE_PROFILES:
-            return
+            raise ClientProfileNotFound(f'Could not find profile "{profile_name}"')
 
         cls._AVAILABLE_PROFILES.pop(profile_name)
 
