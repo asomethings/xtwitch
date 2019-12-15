@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import re
 from collections import OrderedDict
 from typing import Optional
@@ -97,7 +99,7 @@ class Authorization:
         cls._AVAILABLE_PROFILES.pop(profile_name)
 
     @classmethod
-    def get(cls, profile_name: str) -> "Authorization":
+    def get(cls, profile_name: str) -> Authorization:
         profile = cls._AVAILABLE_PROFILES.get(profile_name)
         if not profile:
             raise ClientProfileNotFound(f'Could not find requested profile "{profile_name}"')
