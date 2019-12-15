@@ -13,3 +13,9 @@ class ClientImproperlyConfigured(ClientException):
     """
     Client is improperly configured
     """
+
+
+class ClientProfileNotFound(ClientException):
+    """
+    Could not find matching profile
+    """
