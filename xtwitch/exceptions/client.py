@@ -1,6 +1,6 @@
 from xtwitch.exceptions.base import TwitchException
 
-__all__ = ['ClientException', 'ClientImproperlyConfigured']
+__all__ = ['ClientException', 'ClientImproperlyConfigured', 'ClientProfileNotFound']
 
 
 class ClientException(TwitchException):
