@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional
+from typing import Optional, Type
 
 from xtwitch import Authorization
 
@@ -17,4 +17,5 @@ class Manager:
         return o
 
     def _clone(self) -> Manager:
-        return Manager(authorization=self._authorization)
+        new_class: Type[Manager] = self.__class__
+        return new_class(authorization=self._authorization)
