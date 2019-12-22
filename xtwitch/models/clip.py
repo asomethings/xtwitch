@@ -4,6 +4,8 @@ from xtwitch.models import attr
 from xtwitch.models.base import Model
 from xtwitch.models.manager import Manager
 
+__all__ = ['Clip']
+
 
 class ClipManager(Manager):
 

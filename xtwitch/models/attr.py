@@ -5,6 +5,8 @@ from typing import Callable
 
 import attr
 
+__all__ = ['optional', 'AttrsMetaClass', 'S']
+
 
 def optional(converter: Callable, *args, **kwargs):
     if inspect.isclass(converter) and issubclass(converter, Attrs):

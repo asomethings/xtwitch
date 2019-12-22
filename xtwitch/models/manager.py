@@ -7,6 +7,8 @@ from httpx import Response
 
 from xtwitch import Authorization
 
+__all__ = ['Manager']
+
 
 class Manager:
 

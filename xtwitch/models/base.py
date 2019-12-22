@@ -3,6 +3,8 @@ from __future__ import annotations
 from xtwitch.models import attr
 from xtwitch.models.manager import Manager
 
+__all__ = ['Model']
+
 
 class ModelMetaClass(attr.AttrsMetaClass):
 
