@@ -1,6 +1,25 @@
-import inspect
+from __future__ import annotations
+
+import attr
 
 from xtwitch.models.manager import Manager
+
+
+class JsonParser:
+
+    @classmethod
+    def from_json(cls, data: dict) -> JsonParser:
+        if not attr.has(cls):
+            raise Exception
+
+        filtered_dict = dict()
+        for k, v in data.items():
+            if k not in cls.__annotations__.keys():
+                continue
+
+            filtered_dict.update({k: v})
+
+        return cls(**filtered_dict)
 
 
 class ModelMetaClass(type):
