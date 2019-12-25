@@ -39,7 +39,7 @@ class Manager:
     @property
     def _authorization(self) -> Authorization:
         if not self.__authorization:
-            return Authorization.get('default')
+            return Authorization.get(Authorization.DEFAULT_PROFILE_NAME)
 
         return self.__authorization
 
